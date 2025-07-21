@@ -1,0 +1,8 @@
+<!--
+<xs:schema xmlns="http://www.w3.org/2001/XMLSchema"  xmlns:tools="http://java.sun.com/xml/ns/jaxws"
+           targetNameSpace ="http://www.skandha.com/ " elementFormDefault="Qualifier">
+    <xs:element name="Student">
+
+    </xs:element>
+</xs:schema>-->
+<xs/>
