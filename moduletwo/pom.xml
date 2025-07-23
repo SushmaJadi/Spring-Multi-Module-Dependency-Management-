@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
@@ -17,23 +17,27 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-   <dependencies>
-
+    <dependencies>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>Common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web-services</artifactId>
         </dependency>
-     <!--  <dependency>
-           <groupId>org.springframework.boot</groupId>
-           <artifactId>spring-boot-starter-thymeleaf</artifactId>
-       </dependency>-->
-       <dependency>
-           <groupId>org.springframework.boot</groupId>
-           <artifactId>spring-boot-starter-web</artifactId>
-       </dependency>
+        <!--  <dependency>
+              <groupId>org.springframework.boot</groupId>
+              <artifactId>spring-boot-starter-thymeleaf</artifactId>
+          </dependency>-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
 
         <!-- https://mvnrepository.com/artifact/wsdl4j/wsdl4j -->
-       <dependency>
+        <dependency>
             <groupId>wsdl4j</groupId>
             <artifactId>wsdl4j</artifactId>
             <version>1.6.3</version>
@@ -64,69 +68,15 @@
             <version>1.1</version>
         </dependency>
 
-   </dependencies>
+    </dependencies>
     <build>
-    <plugins>
-    <plugin>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-maven-plugin</artifactId>
-    </plugin>
-    </plugins>
-    </build>
-
-
- <!--   <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-
-            &lt;!&ndash;<plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>jaxb2-maven-plugin</artifactId>
-                <version>1.5</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>xjc</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    &lt;!&ndash; The name of your generated source package &ndash;&gt;
-                    <schemaDirectory>C:\Users\sushm\Downloads\Projects\ContractFirst\src\main\resources\Student.xsd</schemaDirectory>
-                    <bindingFiles>*.xsd</bindingFiles>
-                </configuration>
-            </plugin>&ndash;&gt;
-            <plugin>
-                <groupId>com.sun.xml.ws</groupId>
-                <artifactId>jaxws-maven-plugin</artifactId>
-                <version>2.3.2</version>
-                <executions>
-                    <execution>
-                        <id>generate-java-sources</id>
-                        <phase>process-sources</phase>
-                        <goals>
-                            <goal>wsimport</goal>
-                        </goals>
-                        <configuration>
-                            <extension>true</extension>
-                            &lt;!&ndash;	<wsdlFiles>
-                                    <wsdlFile>C:/Users/sushm/Downloads/Projects/ContractFirst/src/main/resources/wsdl/Student.wsdl</wsdlFile>
-                                </wsdlFiles>
-                                <wsdlLocation>C:/Users/sushm/Downloads/Projects/ContractFirst/src/main/resources/wsdl/Student.wsdl</wsdlLocation>
-                            &ndash;&gt;	<wsdlFiles>
-                            <wsdlFile>C:/Users/sushm/Downloads/Projects/ContractFirst/dummy.wsdl</wsdlFile>
-                        </wsdlFiles>
-                            <wsdlLocation>C:/Users/sushm/Downloads/Projects/ContractFirst/dummy.wsdl</wsdlLocation>
-                        </configuration>
-                    </execution>
-                </executions>
-
-            </plugin>
-
         </plugins>
-    </build>&ndash;&gt;-->
+    </build>
+
 
 </project>

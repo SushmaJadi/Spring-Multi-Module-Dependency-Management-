@@ -2,9 +2,8 @@ package com.example.model;
 
 import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
 import org.springframework.stereotype.Component;
-@Component
-@JsonPOJOBuilder
 
+@Component
 public class ModuleTwo {
     private String element1;
     private String element2;
