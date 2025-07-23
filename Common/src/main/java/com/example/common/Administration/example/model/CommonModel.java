@@ -1,6 +1,7 @@
 package com.example.common.Administration.example.model;
 
 import org.springframework.stereotype.Component;
+
 @Component
 
 public class CommonModel {
@@ -34,9 +35,6 @@ public class CommonModel {
 
     @Override
     public String toString() {
-        return "CommonModel{" +
-                "element1='" + element1 + '\'' +
-                ", element2='" + element2 + '\'' +
-                '}';
+        return "CommonModel{" + "element1='" + element1 + '\'' + ", element2='" + element2 + '\'' + '}';
     }
 }
